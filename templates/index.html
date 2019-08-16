@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <style>
+        .input {
+            margin-left: 5px
+        }
+        .submit {
+            margin-left: 10px
+        }
+        body {
+            vertical-align: 50%;
+            height: 100vh;
+            text-align: center;
+            padding-top: 40vh;
+        }
+    </style>
+</head>
+<body>
+<form method="POST">
+    <label>Выражение: <input class="input" type="text" name="expression" autofocus value="{{ input_value }}"/></label>
+    <input name="sumbit" type="button" value="Вычислить" class="submit"/>
+    {% if result %}
+    <p>Результат: {{ result }}</p>
+    {% endif %}
+</form>
+</body>
+</html>
