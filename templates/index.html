@@ -21,7 +21,7 @@
 <body>
 <form method="POST">
     <label>Выражение: <input class="input" type="text" name="expression" autofocus value="{{ input_value }}"/></label>
-    <input name="sumbit" type="button" value="Вычислить" class="submit"/>
+    <input type="submit" value="Вычислить" class="submit"/>
     {% if result %}
     <p>Результат: {{ result }}</p>
     {% endif %}
